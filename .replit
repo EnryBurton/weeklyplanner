@@ -8,6 +8,6 @@ channel = "stable-24_05"
 run = ["sh", "-c", "npm run dev"]
 
 [[ports]]
-localPort = 5174
-externalPort = 3003
+localPort = 5173
+externalPort = 3002
 exposeLocalhost = true
