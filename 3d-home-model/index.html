@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>32 Ruskin Street, Elwood — 3D Model</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #bfd8e8; font-family: system-ui, sans-serif; }
+    #app { display: block; width: 100vw; height: 100vh; }
+    #ui {
+      position: fixed; top: 12px; left: 12px; z-index: 10;
+      background: rgba(20, 24, 20, 0.55); backdrop-filter: blur(6px);
+      color: #fff; padding: 10px 14px; border-radius: 10px; font-size: 13px; max-width: 300px;
+    }
+    #ui h1 { font-size: 14px; margin: 0 0 6px; font-weight: 600; }
+    #ui p { margin: 0 0 8px; opacity: 0.85; line-height: 1.4; }
+    #ui .views { display: flex; gap: 6px; flex-wrap: wrap; }
+    #ui button {
+      background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+      color: #fff; padding: 5px 10px; border-radius: 6px; cursor: pointer; font-size: 12px;
+    }
+    #ui button:hover { background: rgba(255,255,255,0.3); }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <h1>32 Ruskin Street, Elwood</h1>
+    <p>Stylised 3D massing model built from the floor plan &amp; photos. Drag to orbit, scroll to zoom.</p>
+    <div class="views">
+      <button data-view="street">Street view</button>
+      <button data-view="aerial">Aerial</button>
+      <button data-view="rear">Pool / rear</button>
+      <button data-view="interior">Living pavilion</button>
+    </div>
+  </div>
+  <canvas id="app"></canvas>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
